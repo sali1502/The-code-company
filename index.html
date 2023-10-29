@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The code company</title>
+    <style>
+
+        * {
+            box-sizing: border-box;
+        }
+            .grid-container {
+                display: grid;
+                margin: auto;
+                grid-template-columns: 2fr;
+                grid-gap: 0px;
+                padding: 0px;
+                background-color: white;
+                padding: 0px;
+                width: 90%;
+                max-width: 1400px;
+            }
+        
+            .grid-container>div {
+                background-color: white;
+                text-align: center;
+                padding: 0px;
+            }
+        
+            .logogreen>img {
+                padding-top: 4vh;
+            }
+        
+            .logogreen {
+                background-color: #254f32;
+                text-align: center;
+                height: 14vh;
+                min-height: 90px;
+            }
+        
+            .nav {
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                font-size: 1.2em;
+                background-color: #254f32;
+                color: #f2ECDA;
+                text-align: center;
+                padding-bottom: 3vh;
+            }
+        
+            .buddingplant {
+                background-image: url("images/buddingplant.jpg");
+                border-radius: 0px 0px 100px 0px;
+                border: 0px;
+                width: 25vw;
+                height: 35vh;
+                min-width: 300px;
+                min-height: 400px;
+                margin-bottom: 2vh;
+            }
+        
+            .textastrologer {
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                font-size: 1em;
+                line-height: 1.5em;
+                margin-left: 5vw;
+                margin-right: 5vw;
+                margin-top: 6vh;
+            }
+        
+            .footer {
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                font-size: 0.9em;
+                background-color: #254f32;
+                color: #f2ECDA;
+                text-align: left;
+                height: 11vh;
+                padding-left: 3vw;
+                padding-top: 2vh;
+                padding-bottom: 3vh;
+            }
+        
+            .footer>p {
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                font-size: 0.8em;
+                color: #f2ECDA;
+            }
+        
+            a:link {
+                color: #f2ECDA;
+                text-decoration: none;
+            }
+        
+            a:visited {
+                color: #f2ECDA;
+                text-decoration: none;
+            }
+        
+            a:hover {
+                color: black;
+                text-decoration: none;
+            }
+        
+            .textastrologer>a:link {
+                color: #254f32;
+                text-decoration: none;
+            }
+        
+            .textastrologer>a:visited {
+                color: #254f32;
+                text-decoration: none;
+            }
+        
+            .textastrologer>a:hover {
+                color: black;
+                text-decoration: none;
+            }
+        
+            .textcontact>a:link {
+                color: #254f32;
+                text-decoration: none;
+            }
+        
+            .textcontact>a:visited {
+                color: #254f32;
+                text-decoration: none;
+            }
+        
+            .textcontact>a:hover {
+                color: black;
+            }
+        
+            .logogreen {
+                grid-row-start: 1;
+                grid-column-start: 1;
+                grid-row-end: 2;
+                grid-column-end: 3;
+            }
+        
+            .nav {
+                grid-area: 2 / 1 / 3 / 3;
+            }
+        
+            .buddingplant {
+                grid-area: 3 / 1 / 4 / 2;
+            }
+        
+            .textastrologer {
+                grid-area: 3 / 2 / 4 / 3;
+            }
+        
+            .footer {
+                grid-area: 4 / 1 / 5 / 3;
+            }
+        
+        
+            @media (max-width: 600px) {
+        
+        
+                .grid-container {
+                    display: grid;
+                }
+        
+                .logogreen>img {
+                    padding-top: 4vh;
+                    width: 80%;
+                }
+        
+                .logogreen {
+                    grid-area: 1 / 1 / 2 / 3;
+                }
+        
+                .nav {
+                    grid-area: 2 / 1 / 3 / 3;
+                }
+        
+                .buddingplant {
+                    grid-area: 3 / 1 / 4 / 3;
+                    border-radius: 0px;
+                    width: 100%;
+                    margin-top: 0px;
+                    margin-bottom: 0px;
+                    margin-left: 0px;
+                    margin-bottom: 0px;
+                    padding: 0px;
+                }
+        
+                .textastrologer {
+                    grid-area: 4 / 1 / 5 / 3;
+                    margin-top: 3vh;
+                    margin-bottom: 3vh;
+                }
+        
+                .footer {
+                    grid-area: 5 / 1 / 6 / 3;
+                }
+            }
+    </style>
+
+<body>
+    <div class="grid-container">
+        <header class="logogreen"><img src="images/logo1.jpg" alt="logotype"></header>
+        <nav class="nav"><a href="index.html">Start</a>&nbsp;&nbsp;&nbsp;&nbsp;<a
+                href="template.html">Template</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="contact.html">Contact</a>
+        </nav>
+        <div class="buddingplant"></div>
+        <main class="textastrologer">
+            Are you a budding astrologer, tarot reader or naturopath and want to share your
+            content with the world? I can help. Together we create your website from start to publication on the web.
+            See an example<a href="template.html"> here</a> and contact me for a free consultation<a
+                href=mailto:sali1502@student.miun.se> here.</a></main>
+        <footer class="footer">Email:<a href=mailto:sali1502@student.miun.se>student@laborationproject.se</a><br>
+            <p>About the website: <a href="about.html">Click here</a></p>
+        </footer>
+    </div>
+
+</body>
+
+</html>
